@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Benchmarking JS fibonacci of a number</h1>
+<p>Please enter a number:</p>
+<input type="number" id="fibonacci" name="fibon"
+       min="0" max="43">
+<button onclick="bench()">Start</button>
+
+
+<script>
+function fib(n){
+    if(n ==0) return 0;
+    if(n == 1) return 1;
+    else return fib(n - 1) + fib(n - 2);
+}
+function bench(){
+    let zsd = document.getElementById("fibonacci").value;
+    const start = new Date();
+    let res = fib(zsd);
+    const end = new Date();
+    var time = end.getTime() - start.getTime();
+    document.writeln("<h3>Results of ", zsd, " is: ", res, "</h3>");
+    document.writeln("<h3>Timing: ", time, " ms </h3>");
+}
+</script>
+
+</body>
+</html> 
