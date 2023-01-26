@@ -1,7 +1,7 @@
 # YAPLD
-##Yet Another Programming Language Dragrace
+## Yet Another Programming Language Dragrace
 
-###Synopsis:
+### Synopsis:
 Writing and compiling with the best performing orptions the same function or routine with
 different programming languages and, where possible, compilers and using the internal utilities to time the exectuion of it.
 
